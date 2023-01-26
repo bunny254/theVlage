@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.1.2",
+    "@heroicons/react": "^1.0.5",
+    "axios": "^0.24.0",
+    "date-fns": "^2.25.0",
+    "filepond": "^4.30.3",
+    "filepond-plugin-file-validate-size": "^2.2.5",
+    "filepond-plugin-file-validate-type": "^1.2.6",
+    "filepond-plugin-image-exif-orientation": "^1.0.11",
+    "filepond-plugin-image-preview": "^4.6.10",
+    "flutterwave-react-v3": "^1.1.0",
+    "geolib": "^3.3.3",
+    "google-maps-react": "^2.0.6",
+    "js-cookie": "^3.0.1",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.4.2",
+    "react-filepond": "^7.1.1",
+    "react-geocode": "^0.2.3",
+    "react-google-autocomplete": "^2.6.1",
+    "react-map-gl": "^6.1.17",
+    "react-mapbox-gl-geocoder": "^1.1.0",
+    "react-responsive-carousel": "^3.2.22",
+    "react-select": "^5.2.2",
+    "redux": "^4.1.2",
+    "sharp": "^0.29.2",
+    "tailwind-scrollbar-hide": "^1.1.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  }
+}

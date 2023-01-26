@@ -1,0 +1,50 @@
+@tailwind components;
+
+
+@layer components{
+
+    .btn-major{
+        @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out
+    }
+   
+       
+
+
+    
+    
+    .custom-radio .custom-radio-cont{
+        -webkit-user-select: none;
+	    user-select: none;
+    }
+    .custom-radio input[type="radio"]{
+        @apply m-3
+        
+        
+
+    }
+    .custom-radio-cont {
+        @apply w-[40rem] mr-4 flex items-center cursor-pointer border-gray-200 border bg-blue-900 p-4 rounded-xl hover:opacity-90 transition duration-200 ease-out hover:shadow-2xl active:bg-indigo-700
+       
+    } 
+    
+    
+
+    
+    
+
+};
+ .custom-radio .input[type="radio"]:checked + label {
+       background-color: pink !important; 
+            
+}
+/* input:checked + .custom-rad {
+  @apply bg-gray-500;
+}
+input:checked + div svg {
+  @apply block;
+} */
+.grad{
+    background: #1e3c72 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #1e3c72, #2a5298) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #1e3c72, #2a5298) !important;
+}
