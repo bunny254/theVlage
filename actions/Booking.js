@@ -1,7 +1,7 @@
 import { API } from '../config'
 import axios from 'axios';
 export const NewBooking = (booking, token, propid) => {
-    return axios.post(`https://backend.thevlage.com/api/client/property/${propid}/bookings`,
+    return axios.post(`${API}/client/property/${propid}/bookings`,
         booking,
         {
             headers: {
@@ -31,7 +31,7 @@ export const NewBooking = (booking, token, propid) => {
         })
 };
 export const payBooking = (data) => {
-    return axios.post(`https://backend.thevlage.com/api/payments`,
+    return axios.post(`${API}/payments`,
         data,
     )
         .then(
@@ -57,7 +57,7 @@ export const payBooking = (data) => {
         })
 };
 export const ApproveBooking = (bookingid, token) => {
-    return axios.put(`https://backend.thevlage.com/api/bookings/${bookingid}/confirm`,
+    return axios.put(`${API}/bookings/${bookingid}/confirm`,
         {},
         {
             headers: {
@@ -87,7 +87,7 @@ export const ApproveBooking = (bookingid, token) => {
         })
 };
 export const DeleteBooking = (bookingid, token) => {
-    return axios.delete(`https://backend.thevlage.com/api/client/bookings/${bookingid}`,
+    return axios.delete(`${API}/client/bookings/${bookingid}`,
         {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -116,7 +116,7 @@ export const DeleteBooking = (bookingid, token) => {
         })
 };
 export const RestoreBooking = (bookingid, token) => {
-    return axios.put(`https://backend.thevlage.com/api/client/bookings/restore/${bookingid}`,
+    return axios.put(`${API}/client/bookings/restore/${bookingid}`,
         {},
         {
             headers: {

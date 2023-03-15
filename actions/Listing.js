@@ -1,7 +1,7 @@
 import { API } from '../config'
 import axios from 'axios';
 export const CreateListing = (listing, token) => {
-    return axios.post(`https://backend.thevlage.com/api/properties`,
+    return axios.post(`${API}/properties`,
         listing,
         {
             headers: {
